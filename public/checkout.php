@@ -10,11 +10,11 @@ $YOUR_DOMAIN = 'http://127.0.0.1:8001';
 
 $checkout_session = \Stripe\Checkout\Session::create([
   // 'payment_method_types' => ['card', 'alipay'],
-  'payment_method_types' => ['eps', 'giropay', 'sofort'],
+  // 'payment_method_types' => ['eps', 'giropay', 'sofort'],
   'line_items' => [[
     'price_data' => [
-      // 'currency' => 'USD',
-      'currency' => 'EUR',
+      'currency' => 'USD',
+      // 'currency' => 'EUR',
       'product_data' => [
         'name' => 'T-shirt',
       ],
